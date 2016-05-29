@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvRest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/colorBackground"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="8dp"
+    android:layout_marginBottom="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivRest"
+                    android:layout_width="350dp"
+                    android:layout_height="160dp"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#AA00000C"
+                android:textColor="#fafafa"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textColorTertiary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/tvLabelType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="@string/label_type"
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tvLabelAvg"
+                android:layout_toRightOf="@+id/tvLabelAvg"
+                android:textColor="@color/textColorTertiary"/>
+
+            <TextView
+                android:id="@+id/tvLabelTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLabelType"
+                android:layout_marginRight="3dp"
+                android:text="@string/label_tel"
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvType"
+                android:layout_toEndOf="@+id/tvLabelAvg"
+                android:layout_toRightOf="@+id/tvLabelAvg"
+                android:textColor="@color/textColorTertiary" />
+
+            <TextView
+                android:id="@+id/tvLabelAvg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLabelTel"
+                android:layout_marginRight="3dp"
+                android:text="@string/label_avg"
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvAvg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvTel"
+                android:layout_alignStart="@+id/tvTel"
+                android:layout_below="@+id/tvTel"
+                android:textColor="@color/textColorTertiary"/>
+
+            <ImageButton
+                android:id="@+id/ibEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvAvg"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_edit" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_main_horizontal_margin">95dp</dimen>
+    <dimen name="activity_main_vertical_margin">120dp</dimen>
+    <dimen name="text_item_navigation_size">16sp</dimen>
+    <dimen name="text_message_in_fragment">25dp</dimen>
+    <dimen name="nav_header_height">192dp</dimen>
+    <dimen name="previous_rest_image">120dp</dimen>
+    <dimen name="text_app_name_login">40sp</dimen>
+</resources>

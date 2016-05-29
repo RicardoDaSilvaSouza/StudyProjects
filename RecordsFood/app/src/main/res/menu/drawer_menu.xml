@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/itAddRest"
+            android:icon="@drawable/ic_add"
+            android:title="@string/label_add_restaurant"/>
+        <item android:id="@+id/itSeeRest"
+            android:icon="@drawable/ic_rest"
+            android:title="@string/label_see_restaurants" />
+        <item android:id="@+id/itSeeMap"
+            android:icon="@drawable/ic_map"
+            android:title="@string/label_see_restaurants_map"/>
+        <item android:id="@+id/itSyncData"
+            android:icon="@drawable/ic_download"
+            android:title="@string/label_sync_data"/>
+        <item android:id="@+id/itSeeAbout"
+            android:icon="@drawable/ic_about"
+            android:title="@string/label_about"/>
+    </group>
+</menu>
