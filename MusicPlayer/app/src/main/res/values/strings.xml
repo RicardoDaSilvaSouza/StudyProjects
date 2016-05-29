@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message_not_found_musics">Não foram encontradas músicas no diretório "musicas"!</string>
+    <string name="label_music_artist">Artista:</string>
+    <string name="tab_label_musics">Músicas</string>
+    <string name="tab_label_letter">Letra</string>
+    <string name="message_read_write_permission_deny">Não é possível obter as músicas sem a permissão de leitura e escrita</string>
+    <string name="message_no_current_music">Não há músicas tocando!</string>
+    <string name="label_menu_controle">Controles</string>
+    <string name="label_vagalume_logo">Letras de Músicas por Vagalume</string>
+    <string name="message_internet_permission_deny">Não é possível buscar as letrar sem a permissão de acesso a internet.</string>
+    <string name="message_fetch_music_letter_error">Não foi possível buscar a letra da música!</string>
+    <string name="message_error_fetch_letter">Não foi possível encontrar a letra da música!</string>
+</resources>
