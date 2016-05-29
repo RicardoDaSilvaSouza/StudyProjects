@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="trn-9X-xMe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Pontos Turísticos-->
+        <scene sceneID="Kdt-H0-6Wy">
+            <objects>
+                <viewController id="HZm-Ag-OD8" customClass="RSPontosTuristicosMapViewController" customModule="RSGuia_Turistico" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ln3-5K-SXY"/>
+                        <viewControllerLayoutGuide type="bottom" id="jTH-l2-E9c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jgE-hk-QxD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eYI-BD-3bh">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <connections>
+                                    <outlet property="delegate" destination="HZm-Ag-OD8" id="AoP-Nu-nAj"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pontos Turísticos" id="EIO-dU-lya"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="mapView" destination="eYI-BD-3bh" id="Epi-en-xvu"/>
+                        <segue destination="tTb-BM-Bxm" kind="show" identifier="segueDetail" id="1SM-EC-zC4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCX-rg-GEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779" y="473"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uf5-Rv-GXc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="trn-9X-xMe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G1p-Ko-TQO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HZm-Ag-OD8" kind="relationship" relationship="rootViewController" id="rxL-rV-l9n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67Y-oz-23r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="473"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="B3H-B8-6ks">
+            <objects>
+                <viewController id="tTb-BM-Bxm" customClass="RSDetailViewController" customModule="RSGuia_Turistico" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A8l-iI-2c8"/>
+                        <viewControllerLayoutGuide type="bottom" id="IQ4-tv-lwE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eG2-fH-j97">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do ponto turístico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3O-kv-c9l">
+                                <rect key="frame" x="20" y="82" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Endereço do ponto turístico" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0be-TO-I0D">
+                                <rect key="frame" x="20" y="311" width="280" height="118"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Qvl-2y-qxD">
+                                <rect key="frame" x="142" y="194" width="37" height="37"/>
+                                <color key="backgroundColor" red="0.99661058890145837" green="1" blue="0.9683805671645257" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.99573146007252311" blue="0.95375093942450206" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="color" red="0.1214264607805462" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70g-rx-ykN">
+                                <rect key="frame" x="40" y="123" width="240" height="180"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageLocal" destination="70g-rx-ykN" id="dOJ-Gb-qJJ"/>
+                        <outlet property="labelEndereco" destination="0be-TO-I0D" id="ESw-AD-X2f"/>
+                        <outlet property="labelNome" destination="t3O-kv-c9l" id="X5E-yp-TnV"/>
+                        <outlet property="progress" destination="Qvl-2y-qxD" id="She-Ra-chw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpW-zy-wSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1306" y="473"/>
+        </scene>
+    </scenes>
+</document>

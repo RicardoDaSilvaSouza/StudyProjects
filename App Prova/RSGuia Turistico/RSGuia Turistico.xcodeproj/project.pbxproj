@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC05160A1C943C4E00763277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0516091C943C4E00763277 /* AppDelegate.swift */; };
+		AC05160F1C943C4E00763277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC05160D1C943C4E00763277 /* Main.storyboard */; };
+		AC0516111C943C4E00763277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0516101C943C4E00763277 /* Assets.xcassets */; };
+		AC0516141C943C4E00763277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0516121C943C4E00763277 /* LaunchScreen.storyboard */; };
+		AC05161F1C943C4F00763277 /* RSGuia_TuristicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC05161E1C943C4F00763277 /* RSGuia_TuristicoTests.swift */; };
+		AC05162A1C943C4F00763277 /* RSGuia_TuristicoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0516291C943C4F00763277 /* RSGuia_TuristicoUITests.swift */; };
+		AC0516381C943EC900763277 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0516371C943EC900763277 /* MapKit.framework */; };
+		AC05163C1C943FF800763277 /* RSPontosTuristicosMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC05163B1C943FF800763277 /* RSPontosTuristicosMapViewController.swift */; };
+		AC05163E1C94486600763277 /* RSCustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC05163D1C94486600763277 /* RSCustomAnnotation.swift */; };
+		AC0516401C944D3500763277 /* RSPonto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC05163F1C944D3500763277 /* RSPonto.swift */; };
+		AC0516421C94520C00763277 /* RSDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0516411C94520C00763277 /* RSDetailViewController.swift */; };
+		AC0516451C9460E000763277 /* PontoTuristicoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC0516431C9460E000763277 /* PontoTuristicoModel.xcdatamodeld */; };
+		AC0516561C94651F00763277 /* Ponto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0516541C94651F00763277 /* Ponto.swift */; };
+		AC0516601C946DA500763277 /* Ponto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC05165F1C946DA500763277 /* Ponto+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC05161B1C943C4F00763277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0515FE1C943C4E00763277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0516051C943C4E00763277;
+			remoteInfo = "RSGuia Turistico";
+		};
+		AC0516261C943C4F00763277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0515FE1C943C4E00763277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0516051C943C4E00763277;
+			remoteInfo = "RSGuia Turistico";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC0516061C943C4E00763277 /* RSGuia Turistico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSGuia Turistico.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0516091C943C4E00763277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC05160E1C943C4E00763277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC0516101C943C4E00763277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC0516131C943C4E00763277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC0516151C943C4E00763277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC05161A1C943C4F00763277 /* RSGuia TuristicoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RSGuia TuristicoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC05161E1C943C4F00763277 /* RSGuia_TuristicoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSGuia_TuristicoTests.swift; sourceTree = "<group>"; };
+		AC0516201C943C4F00763277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0516251C943C4F00763277 /* RSGuia TuristicoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RSGuia TuristicoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0516291C943C4F00763277 /* RSGuia_TuristicoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSGuia_TuristicoUITests.swift; sourceTree = "<group>"; };
+		AC05162B1C943C4F00763277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0516371C943EC900763277 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AC05163B1C943FF800763277 /* RSPontosTuristicosMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSPontosTuristicosMapViewController.swift; sourceTree = "<group>"; };
+		AC05163D1C94486600763277 /* RSCustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCustomAnnotation.swift; sourceTree = "<group>"; };
+		AC05163F1C944D3500763277 /* RSPonto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSPonto.swift; sourceTree = "<group>"; };
+		AC0516411C94520C00763277 /* RSDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDetailViewController.swift; sourceTree = "<group>"; };
+		AC0516441C9460E000763277 /* PontoTuristicoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PontoTuristicoModel.xcdatamodel; sourceTree = "<group>"; };
+		AC0516541C94651F00763277 /* Ponto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ponto.swift; path = ../Ponto.swift; sourceTree = "<group>"; };
+		AC05165F1C946DA500763277 /* Ponto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Ponto+CoreDataProperties.swift"; path = "../Ponto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC0516031C943C4E00763277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0516381C943EC900763277 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0516171C943C4F00763277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0516221C943C4F00763277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0515FD1C943C4E00763277 = {
+			isa = PBXGroup;
+			children = (
+				AC0516371C943EC900763277 /* MapKit.framework */,
+				AC0516081C943C4E00763277 /* RSGuia Turistico */,
+				AC05161D1C943C4F00763277 /* RSGuia TuristicoTests */,
+				AC0516281C943C4F00763277 /* RSGuia TuristicoUITests */,
+				AC0516071C943C4E00763277 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC0516071C943C4E00763277 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC0516061C943C4E00763277 /* RSGuia Turistico.app */,
+				AC05161A1C943C4F00763277 /* RSGuia TuristicoTests.xctest */,
+				AC0516251C943C4F00763277 /* RSGuia TuristicoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC0516081C943C4E00763277 /* RSGuia Turistico */ = {
+			isa = PBXGroup;
+			children = (
+				AC05165F1C946DA500763277 /* Ponto+CoreDataProperties.swift */,
+				AC0516541C94651F00763277 /* Ponto.swift */,
+				AC0516091C943C4E00763277 /* AppDelegate.swift */,
+				AC05160D1C943C4E00763277 /* Main.storyboard */,
+				AC0516101C943C4E00763277 /* Assets.xcassets */,
+				AC0516121C943C4E00763277 /* LaunchScreen.storyboard */,
+				AC0516151C943C4E00763277 /* Info.plist */,
+				AC05163B1C943FF800763277 /* RSPontosTuristicosMapViewController.swift */,
+				AC05163D1C94486600763277 /* RSCustomAnnotation.swift */,
+				AC05163F1C944D3500763277 /* RSPonto.swift */,
+				AC0516411C94520C00763277 /* RSDetailViewController.swift */,
+				AC0516431C9460E000763277 /* PontoTuristicoModel.xcdatamodeld */,
+			);
+			path = "RSGuia Turistico";
+			sourceTree = "<group>";
+		};
+		AC05161D1C943C4F00763277 /* RSGuia TuristicoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC05161E1C943C4F00763277 /* RSGuia_TuristicoTests.swift */,
+				AC0516201C943C4F00763277 /* Info.plist */,
+			);
+			path = "RSGuia TuristicoTests";
+			sourceTree = "<group>";
+		};
+		AC0516281C943C4F00763277 /* RSGuia TuristicoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0516291C943C4F00763277 /* RSGuia_TuristicoUITests.swift */,
+				AC05162B1C943C4F00763277 /* Info.plist */,
+			);
+			path = "RSGuia TuristicoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC0516051C943C4E00763277 /* RSGuia Turistico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC05162E1C943C4F00763277 /* Build configuration list for PBXNativeTarget "RSGuia Turistico" */;
+			buildPhases = (
+				AC0516021C943C4E00763277 /* Sources */,
+				AC0516031C943C4E00763277 /* Frameworks */,
+				AC0516041C943C4E00763277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RSGuia Turistico";
+			productName = "RSGuia Turistico";
+			productReference = AC0516061C943C4E00763277 /* RSGuia Turistico.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC0516191C943C4F00763277 /* RSGuia TuristicoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0516311C943C4F00763277 /* Build configuration list for PBXNativeTarget "RSGuia TuristicoTests" */;
+			buildPhases = (
+				AC0516161C943C4F00763277 /* Sources */,
+				AC0516171C943C4F00763277 /* Frameworks */,
+				AC0516181C943C4F00763277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC05161C1C943C4F00763277 /* PBXTargetDependency */,
+			);
+			name = "RSGuia TuristicoTests";
+			productName = "RSGuia TuristicoTests";
+			productReference = AC05161A1C943C4F00763277 /* RSGuia TuristicoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC0516241C943C4F00763277 /* RSGuia TuristicoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0516341C943C4F00763277 /* Build configuration list for PBXNativeTarget "RSGuia TuristicoUITests" */;
+			buildPhases = (
+				AC0516211C943C4F00763277 /* Sources */,
+				AC0516221C943C4F00763277 /* Frameworks */,
+				AC0516231C943C4F00763277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0516271C943C4F00763277 /* PBXTargetDependency */,
+			);
+			name = "RSGuia TuristicoUITests";
+			productName = "RSGuia TuristicoUITests";
+			productReference = AC0516251C943C4F00763277 /* RSGuia TuristicoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC0515FE1C943C4E00763277 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Usuário Convidado";
+				TargetAttributes = {
+					AC0516051C943C4E00763277 = {
+						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					AC0516191C943C4F00763277 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AC0516051C943C4E00763277;
+					};
+					AC0516241C943C4F00763277 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AC0516051C943C4E00763277;
+					};
+				};
+			};
+			buildConfigurationList = AC0516011C943C4E00763277 /* Build configuration list for PBXProject "RSGuia Turistico" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC0515FD1C943C4E00763277;
+			productRefGroup = AC0516071C943C4E00763277 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC0516051C943C4E00763277 /* RSGuia Turistico */,
+				AC0516191C943C4F00763277 /* RSGuia TuristicoTests */,
+				AC0516241C943C4F00763277 /* RSGuia TuristicoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC0516041C943C4E00763277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0516141C943C4E00763277 /* LaunchScreen.storyboard in Resources */,
+				AC0516111C943C4E00763277 /* Assets.xcassets in Resources */,
+				AC05160F1C943C4E00763277 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0516181C943C4F00763277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0516231C943C4F00763277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC0516021C943C4E00763277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC05163C1C943FF800763277 /* RSPontosTuristicosMapViewController.swift in Sources */,
+				AC0516401C944D3500763277 /* RSPonto.swift in Sources */,
+				AC0516421C94520C00763277 /* RSDetailViewController.swift in Sources */,
+				AC05163E1C94486600763277 /* RSCustomAnnotation.swift in Sources */,
+				AC0516601C946DA500763277 /* Ponto+CoreDataProperties.swift in Sources */,
+				AC0516451C9460E000763277 /* PontoTuristicoModel.xcdatamodeld in Sources */,
+				AC0516561C94651F00763277 /* Ponto.swift in Sources */,
+				AC05160A1C943C4E00763277 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0516161C943C4F00763277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC05161F1C943C4F00763277 /* RSGuia_TuristicoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0516211C943C4F00763277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC05162A1C943C4F00763277 /* RSGuia_TuristicoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC05161C1C943C4F00763277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0516051C943C4E00763277 /* RSGuia Turistico */;
+			targetProxy = AC05161B1C943C4F00763277 /* PBXContainerItemProxy */;
+		};
+		AC0516271C943C4F00763277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0516051C943C4E00763277 /* RSGuia Turistico */;
+			targetProxy = AC0516261C943C4F00763277 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC05160D1C943C4E00763277 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC05160E1C943C4E00763277 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC0516121C943C4E00763277 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0516131C943C4E00763277 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC05162C1C943C4F00763277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC05162D1C943C4F00763277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC05162F1C943C4F00763277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "RSGuia Turistico/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.rm49865.RSGuia-Turistico";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC0516301C943C4F00763277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "RSGuia Turistico/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.rm49865.RSGuia-Turistico";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC0516321C943C4F00763277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RSGuia TuristicoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.rm49865.RSGuia-TuristicoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSGuia Turistico.app/RSGuia Turistico";
+			};
+			name = Debug;
+		};
+		AC0516331C943C4F00763277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RSGuia TuristicoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.rm49865.RSGuia-TuristicoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSGuia Turistico.app/RSGuia Turistico";
+			};
+			name = Release;
+		};
+		AC0516351C943C4F00763277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RSGuia TuristicoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.rm49865.RSGuia-TuristicoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RSGuia Turistico";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AC0516361C943C4F00763277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RSGuia TuristicoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.rm49865.RSGuia-TuristicoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RSGuia Turistico";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC0516011C943C4E00763277 /* Build configuration list for PBXProject "RSGuia Turistico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC05162C1C943C4F00763277 /* Debug */,
+				AC05162D1C943C4F00763277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC05162E1C943C4F00763277 /* Build configuration list for PBXNativeTarget "RSGuia Turistico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC05162F1C943C4F00763277 /* Debug */,
+				AC0516301C943C4F00763277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC0516311C943C4F00763277 /* Build configuration list for PBXNativeTarget "RSGuia TuristicoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0516321C943C4F00763277 /* Debug */,
+				AC0516331C943C4F00763277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC0516341C943C4F00763277 /* Build configuration list for PBXNativeTarget "RSGuia TuristicoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0516351C943C4F00763277 /* Debug */,
+				AC0516361C943C4F00763277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC0516431C9460E000763277 /* PontoTuristicoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC0516441C9460E000763277 /* PontoTuristicoModel.xcdatamodel */,
+			);
+			currentVersion = AC0516441C9460E000763277 /* PontoTuristicoModel.xcdatamodel */;
+			path = PontoTuristicoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC0515FE1C943C4E00763277 /* Project object */;
+}
